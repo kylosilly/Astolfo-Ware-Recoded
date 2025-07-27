@@ -127,6 +127,10 @@ local wrappedlabel = Sections.Label:CreateLabel("This is a much longer text that
 local statuslabel = Sections.Label:CreateLabel("Status: Idle")
 statuslabel:UpdateText("Status: Active - "..os.date("%H:%M:%S"))
 
+-- notify
+
+Window:Notify("title", "content", 5) -- 5 is how long it should show
+
 -- button
 
 Sections.Button:CreateButton("click me", function()
