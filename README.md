@@ -1,5 +1,5 @@
 Made by @kylosilly on discord!
 Discord: https://discord.gg/zrEef4CnTS
 
-Helpers (Devs/Contributors)
+Helpers (Devs/Contributors):
 david.zxc
