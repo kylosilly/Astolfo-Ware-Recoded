@@ -1,1 +1,1 @@
-print"istsud"
+print(ass_executor)
