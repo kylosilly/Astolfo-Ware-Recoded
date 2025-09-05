@@ -1,1 +1,1 @@
-print"test"
+print(ass_executor)
