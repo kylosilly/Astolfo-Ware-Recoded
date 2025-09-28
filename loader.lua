@@ -6,10 +6,10 @@ if (identifyexecutor() == "Solara") or (not (getthreadcontext())) or (getthreadc
 end
 
 local game_loaders = {
-    [8316902627] = "24195eae48beac5757ce894c3d382c6c",
-    [7709344486] = "48a7ec7ffcd054f17bbd1c71eee5451a",
-    [7094518649] = "b8560c39bfc9adc5c6d83714c009c265",
-    [8353463684] = "f92e09e4994d2ffb274fbcbfbeb2d69c"
+    [8316902627] = "3f57e7d8d23e770e9de3f6624b50e1ec",
+    [7709344486] = "7fa73f918f9352a3b3761e15bdd0beb3",
+    [7094518649] = "1eb1b77d19b3a82b751354350cc2774a",
+    [8353463684] = "6c0417378339dbc42de1d4c8b907deb4"
 }
 
 local game_id_loader = game_loaders[game.GameId]
