@@ -1,9 +1,4 @@
-local local_player = game:GetService("Players").LocalPlayer
 local script_key = script_key
-
-if (identifyexecutor() == "Solara") or (not (getthreadcontext())) or (getthreadcontext() < 7) then
-    return local_player:Kick("Unsupported executor")
-end
 
 local game_loaders = {
     [8316902627] = "24195eae48beac5757ce894c3d382c6c",
@@ -20,4 +15,4 @@ if (not game_id_loader) then
     return
 end
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/"..game_id_loader..".lua"))
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/"..game_id_loader..".lua"))
