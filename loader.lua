@@ -1,4 +1,9 @@
+local local_player = game:GetService("Players").LocalPlayer
 local script_key = script_key
+
+if (identifyexecutor() == "Solara") or (not (getthreadcontext())) or (getthreadcontext() < 7) then
+    return local_player:Kick("Unsupported executor")
+end
 
 local game_loaders = {
     [8316902627] = "24195eae48beac5757ce894c3d382c6c",
@@ -11,7 +16,7 @@ local game_id_loader = game_loaders[game.GameId]
 
 if (not game_id_loader) then
     setclipboard("https://discord.gg/zrEef4CnTS")
-    game:GetService("Players").LocalPlayer:Kick(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. " is not supported! if you want it supported join the discord copied to your clipboard!")
+    local_player:Kick(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. " is not supported! if you want it supported join the discord copied to your clipboard!")
     return
 end
 
