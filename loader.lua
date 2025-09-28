@@ -20,4 +20,4 @@ if (not game_id_loader) then
     return
 end
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/"..game_id_loader))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/"..game_id_loader..".lua"))
