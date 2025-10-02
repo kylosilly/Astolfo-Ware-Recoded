@@ -10,7 +10,8 @@ local game_loaders = {
     [7709344486] = "7fa73f918f9352a3b3761e15bdd0beb3",
     [7094518649] = "1eb1b77d19b3a82b751354350cc2774a",
     [8353463684] = "6c0417378339dbc42de1d4c8b907deb4",
-    [7326934954] = "afdc0c73cac49d98e8e76723145194fb"
+    [7326934954] = "afdc0c73cac49d98e8e76723145194fb",
+    [1709917610] = "56fceedfaeca2e6df4bf15147060bb8c"
 }
 
 local game_id_loader = game_loaders[game.GameId]
