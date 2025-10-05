@@ -14,15 +14,23 @@ local game_loaders = {
     [1709917610] = "56fceedfaeca2e6df4bf15147060bb8c"
 }
 
-local game_id_loader = game_loaders[game.GameId]
+function load_script()
+    local game_id_loader = game_loaders[game.GameId]
 
-if (not game_id_loader) then
-    setclipboard("https://discord.gg/zrEef4CnTS")
-    local_player:Kick(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name ..
-        " is not supported! If you want it supported join the discord copied to your clipboard!")
-    return
+    if (not game_id_loader) then
+        setclipboard("https://discord.gg/zrEef4CnTS")
+        local_player:Kick(game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name ..
+            " is not supported! If you want it supported join the discord copied to your clipboard!")
+        return
+    end
+
+    local success, err = pcall(function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/" .. game_id_loader .. ".lua"))()
+    end)
 end
 
-local success, err = pcall(function()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/" .. game_id_loader .. ".lua"))()
+load_script()
+
+queue_on_teleport(function()
+    load_script()
 end)
